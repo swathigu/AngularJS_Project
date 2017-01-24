@@ -1,0 +1,33 @@
+[
+  {
+    "name" : "The Lightning Thief",
+    "author" : "Rick Riordan"
+  }
+,
+  {
+      "name" : "The Sea of Monsters",
+    "author" : "Rick Riordan"
+  }
+,
+  {
+    "name" : "Sophie's World : The Greek Philosophers",
+    "author" : "Jostein Gaarder"
+ }
+,
+  {
+    "name" : "Lucene in Action, Second Edition",
+    "author" : "Michael McCandless"
+  },
+    {
+    "name" : "Who will Die when you cry",
+    "author" : "Robin Sharma"
+  },
+    {
+    "name" : "The Cat in the Hat",
+    "author" : "Dr. Seuss"
+  },
+    {
+    "name" : "The Cat in the Hat",
+    "author" : "Dr. Seuss"
+  }
+]

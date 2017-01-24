@@ -1,0 +1,101 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="css/flexbox.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.1/ui-grid.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.14/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.14/angular-resource.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.12.1/ui-bootstrap-tpls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.1/ui-grid.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.4.14/angular-messages.min.js" ></script>
+<script src="app/app.js"></script>   
+<script src="app/services/constantService.js"></script>
+<script src="app/services/bookListService.js"></script>
+<script src="app/controllers/bookController.js"></script>
+<script src="app/controllers/bookListController.js"></script>
+<script src="app/controllers/carouselController.js"></script>
+<script src="app/controllers/accordianController.js"></script>
+<script src="app/controllers/addBookController.js"></script>
+<script src="app/controllers/searchController.js"></script>
+<script src="app/services/searchService.js"></script>
+<script src="app/js/loginFormValidation.js"></script>
+
+<title>Angular Example</title>
+</head>
+<body id="main" ng-app="libraryApp" >
+<div class="flex-container">
+<div ng-include="'/app/views/head.html'"></div>
+<nav class="aside nav">
+<ul>
+    <li><a ui-sref="addBook">Add New Book</a></li>
+    <li><a ui-sref="list">Book List</a></li>
+    <li><a ui-sref="contact">Contact Us</a></li>
+    <li><a ui-sref="search">Search</a></li>
+    </ul>
+</nav>
+
+<div class="main"  ui-view></div>
+<aside class="aside aside2"><img id="img1" src="images/img1.jpeg" alt="Book Image" />   </aside>
+<footer class="footer">Footer Content</footer>
+</div>
+</body>  
+    
+</html>    
+    
+    
+    
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<body id="main" ng-app="libraryApp" >
+<div ng-include="'/app/views/head.html'"></div>
+<div class="container">
+<nav>
+<ul>
+    <li><a ui-sref="new">Add New Book</a></li>
+    <li><a ui-sref="list">Book List</a></li>
+    <li><a ui-sref="contact">Contact Us</a></li>
+    <li><a ui-sref="search">Search</a></li>
+    </ul>
+</nav>
+
+<div class="flex-column">
+<div ui-view></div>
+</div>
+<aside><img id="img1" src="images/img1.jpeg" alt="Book Image" />   </aside>
+</div>
+<footer>Footer Content</footer>
+</body>
+</html>-->

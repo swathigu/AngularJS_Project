@@ -1,0 +1,38 @@
+<div id="register" ng-controller="formValidation"> 
+    <form class="form-horizontal" id="registerForm" name="registerForm">
+      <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input id="firstName" name="firstName" class="form-control" type="text" ng-model="firstName" ng-minlength="5" ng-maxlength="20" required/>
+      </div>
+        <div ng-messages="registerForm.firstName.$error" class="errorMsg">
+          <div ng-message="required">This field is required</div>
+          <div ng-message="minlength">First Name should be over 5characters</div>
+          <div ng-message="maxlength">First Name should not exceed 20 characters</div>
+      </div>
+      <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" class="form-control" type="text" ng-model="lastName" ng-minlength="5" ng-maxlength="20" required/>
+      </div>
+        <div ng-messages="registerForm.lastName.$error" class="errorMsg">
+          <div ng-message="required">This field is required</div>
+          <div ng-message="minlength">Last Name should be over 5characters</div>
+          <div ng-message="maxlength">Last Name should not exceed 20 characters</div>
+      </div>
+      <div class="form-group">
+          <label for="phone">Telephone</label>
+          <input id="phone" name="phone" class="form-control" type="text" ng-model="phone"  required ng-pattern="phoneExp"/>
+      </div>
+        <div ng-messages="registerForm.phone.$error" class="errorMsg">
+          <div ng-message="required">This field is required</div>
+          <div ng-message="pattern">Enter Phone Number in proper format</div>
+      </div>
+       <div class="form-group">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" class="form-control" type="text" ng-model="email"  required/>
+      </div>
+        <div ng-messages="registerForm.email.$error" class="errorMsg">
+          <div ng-message="required">This field is required</div>
+      </div>
+      <input type="submit" class="btn btn-primary">
+      </form>
+</div>

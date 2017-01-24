@@ -1,0 +1,136 @@
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+@media all and (min-width: 600px) {
+    .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+    .main    { flex: 3 0px; }
+    #nav{ order: 1; } 
+    .main    { order: 2; }
+    .aside2 { order: 3; }
+    .footer  { order: 4; }
+}
+
+#main {
+   background: #e5e172;
+  }
+
+#header-list{
+    list-style: none;
+    display: block;
+}
+.container {
+  display: -webkit-flex;
+  display: flex;
+  min-height: 500px;
+  justify-content: space-around;
+}
+.headcontainer {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+}
+nav {
+   font: 18px Helvetica;
+   padding-top: 100px;
+   width: 200px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+    align-content:center;
+}
+#grid1{
+    height: 35px;
+}
+li{
+    list-style: none;
+    padding: 5px;
+}
+#img1{
+    width: 200px;
+    height: 500px;
+    -webkit-flex: 2;
+          flex: 2;
+}
+.flex-column {
+   width: 500px;
+    height: 500px;
+    padding-top: 75px;
+}
+header {
+    font: bold 28px Helvetica;
+    color: black;
+    display: block;
+    margin: 4px;
+    padding: 5px;
+    height: 200px;
+    text-align: center;
+    border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background: #9697e0;
+}
+footer{
+    font: bold 28px Helvetica;
+    color: black;
+    padding: 50px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid #eebb55;
+    border-radius: 7pt;
+    background: #9697e0;
+}
+div1{
+    border: 1px solid #8888bb;
+    width:700px;
+    overflow: scroll;
+}
+
+.offer-detail-image {
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  height: auto;
+  max-width: 80%;
+  min-width: 70%;
+  margin-right: auto;
+  margin-bottom: 12px;
+  margin-left: auto;
+  float: none;
+}
+
+ .offer-detail-image-div {
+    display: block;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+   }
+
+.carousel-caption{
+    height:10px;
+    width:inherit;
+}
+#login,#register,#addBook{
+    background: #729ee5;
+     border: 1px solid #8888bb;
+     padding: 50px;
+     margin: 5px;
+    overflow: auto;
+}
+#register{
+    padding-top: 0px;
+}
+.errorMsg{
+    color: crimson
+}

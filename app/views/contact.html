@@ -1,0 +1,33 @@
+<div ng-controller="accordianController">
+ <label class="checkbox">
+    <input type="checkbox" ng-model="oneAtATime">
+    Open only one at a time
+  </label>
+
+  <accordion close-others="oneAtATime">
+    <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+      Address:{{group.content}}<br>
+       Phone: {{group.phone}}
+    </accordion-group>
+    
+  <accordion-group heading="Add New Location">
+      <form class="form-inline" id="form1">
+          <p>Enter new location details</p>
+          <div class="form-group">
+              <label for="title">Location</label>
+              <input id="title" class="form-control" type="text" ng-model="title"/>
+          </div>
+          <div class="form-group">
+              <label for="address">Address</label>
+              <input id="address" class="form-control" type="text" ng-model="address"/>
+          </div>
+          <div class="form-group">
+              <label for="phone">Phone</label>
+              <input id="phone" class="form-control" type="text" ng-model="phone">
+          </div>
+          <button class="btn btn-primary" ng-click="addItem()">Add Item</button>
+      </form>
+    </accordion-group>
+      
+     </accordion>
+</div>

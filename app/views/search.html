@@ -1,0 +1,22 @@
+<div ng-controller="searchController">
+<form>
+ <p>Search by Author </p>
+  <input type="text" class="form-control" placeholder="Search for Author" ng-model="selectedBook" typeahead="book as book.author for book in books | filter:$viewValue | limitTo:4">
+ <p>Search by Book Name </p>
+  <input type="text" class="form-control" placeholder="Search for book" ng-model="selectedBook1" typeahead="book as book.name for book in books | filter:$viewValue | limitTo:4">
+    <h4>Selected Book</h4>
+    <pre>{{selectedBook ||selectedBook1}}</pre>
+
+
+<h4>Asynchronous results loaded via http</h4>
+<!--<input type="text" ng-model="asyncSelected" placeholder="loaded via $http" typeahead="users.name for users in searchJson($viewValue) | limitTo:3" class="form-control"> -->
+    
+<input type="text" ng-model="asyncSelected" placeholder="loaded via $http" typeahead="users.firstname for users in searchJson($viewValue) | limitTo:3" class="form-control">
+<pre> {{asyncSelected | json}}</pre>
+
+</form>
+
+</div>
+<script type="text/ng-template" id="customTemplate.html">
+ 
+</script>
